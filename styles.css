@@ -79,6 +79,7 @@ img {
     padding: 8px;
     cursor: pointer;
     margin: 24px;
+    border-bottom: medium solid #221f4c;
 }
 .navigation .nav {
     padding: 4px;
