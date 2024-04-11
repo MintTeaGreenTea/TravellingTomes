@@ -1,8 +1,8 @@
 a {
     color: #221f4c;
 }
-a:hover {
-    color: #0056b3;
+a:hover, .dropdown:hover {
+    color: IndianRed;
     text-decoration: underline;
 }
 
@@ -40,33 +40,27 @@ body {
     font-weight: bold;
 }
 
-.frame {
-    z-index: 1;
-}
-
 img {
     width: 100%;
-    margin-top: -30%;
 }
 
-.image-stack {
-    margin-bottom: 10%;
+@media only screen and (min-width: 320px) {
+    #main {
+        padding:2em;
+        color: #221f4c;
+    }
 }
 
-.logo {
-    margin-left: 37%;
-    margin-right: 50%;
-    margin-bottom: -60%;
-    max-width: 400px;
-    position: relative;
-    z-index: 2;
+@media only screen and (min-width: 768px) {
+    #main {
+        width: 66%;
+        padding: 2em;
+        color: #221f4c;
+    }
 }
 
 .main_logo {
-    margin-top:4%;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.5em auto -1.5em;
     width: 100px;
 }
 
@@ -92,4 +86,32 @@ img {
 
 }
 
+@media only screen and (min-width: 320px) {
+    .team-member {
+        margin: 1.5%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    .team-member {
+        width: 30%;
+        margin: 1.5%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
