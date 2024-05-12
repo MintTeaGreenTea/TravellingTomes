@@ -17,35 +17,28 @@
 </div>
 <div class="row navigation">
     <div class="nav col-xs-6 col-md-3"><a href="about_tomes.html">What is Travelling Tomes?</a></div>
-    <div class="nav col-xs-6 col-md-3"><a href="explore.html">Explore</a></div>
+    <div class="nav col-xs-6 col-md-3"><a href="explore.html">Around you</a></div>
     <div class="nav col-xs-6 col-md-3">
         <div class="dropdown">
             <a class="btn btn-default dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Participate
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="signin.html">Sign In</a>
                 <a class="dropdown-item" href="borrow.html">Borrow a Book</a>
                 <a class="dropdown-item" href="lend.html">Lend a Book</a>
             </div>
         </div>
     </div>
-    <div class="nav col-xs-6 col-md-3">
-        <div class="dropdown">
-            <a class="btn btn-default dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="about_team.html">Meet the Team</a>
-                <a class="dropdown-item" href="contact.html">Contact Us</a>
-            </div>
+    <div class="nav col-xs-6 col-md-3"><a href="about_team.html">About the Team</a></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Available Books</h2>
+            <div id="bookList"></div> <!-- This is where the book data will be displayed -->
         </div>
     </div>
-
-</div>
-<div class="row footer">
-    <div class="col-xs-12 col-md-8">Designed and built by Group 1 using
-        <span>CSS</span> and <span>Bootstrap!</span></div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -56,5 +49,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+<script src="nodes.js"></script>
+<div class="row footer">
+    <div class="col-xs-12 col-md-8">Designed and built by Group 1 using
+        <span>CSS</span>, <span>Bootstrap</span>, and more!</div>
+</div>
 </body>
 </html>

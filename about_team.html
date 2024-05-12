@@ -10,85 +10,175 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Travelling Tomes</title>
-</head>
-<article>
-<div class="main_logo">
-    <a href="index.html"><img src="images/logo.png" alt="Travelling Tomes Logo"></a>
-</div>
-<div class="row navigation">
-    <div class="nav col-xs-6 col-md-3"><a href="about_tomes.html">What is Travelling Tomes?</a></div>
-    <div class="nav col-xs-6 col-md-3"><a href="explore.html">Explore</a></div>
-    <div class="nav col-xs-6 col-md-3">
-        <div class="dropdown">
-            <a class="btn btn-default dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Participate
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="signin.html">Sign In</a>
-                <a class="dropdown-item" href="borrow.html">Borrow a Book</a>
-                <a class="dropdown-item" href="lend.html">Lend a Book</a>
-            </div>
-        </div>
-    </div>
-    <div class="nav col-xs-6 col-md-3">
-        <div class="dropdown">
-            <a class="btn btn-default dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="about_team.html">Meet the Team</a>
-                <a class="dropdown-item" href="contact.html">Contact Us</a>
-            </div>
-        </div>
-    </div>
+    <style>
+        @media only screen and (min-width: 320px) {
+            #main_about {
+                background-image: url('images/foliage_frame.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+            }
+        }
 
-</div>
+        @media only screen and (min-width: 768px) {
+            #main_about {
+                background-image: url('images/foliage_frame.png');
+                background-repeat: no-repeat;
+                background-position: center bottom;
+            }
+        }
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+    </style>
+    <title>Travelling Tomes</title>
 </head>
-<div id="main">
+
+<body>
+<article>
+    <div class="main_logo">
+        <a href="index.html"><img src="images/logo.png" alt="Travelling Tomes Logo"></a>
+    </div>
+    <div class="row navigation">
+        <div class="nav col-xs-6 col-md-3"><a href="about_tomes.html">What is Travelling Tomes?</a></div>
+        <div class="nav col-xs-6 col-md-3"><a href="explore.html">Around you</a></div>
+        <div class="nav col-xs-6 col-md-3">
+            <div class="dropdown">
+                <a class="btn btn-default dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Participate
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="borrow.html">Borrow a Book</a>
+                    <a class="dropdown-item" href="lend.html">Lend a Book</a>
+                </div>
+            </div>
+        </div>
+            <div class="nav col-xs-6 col-md-3"><a href="about_team.html">About the Team</a></div>
+        </div>
+    </div>
+</article>
+
+<div id="main_about">
     <article>
         <h2>The Travelling Team</h2>
-        <p>United by our love of books and the Digital Humanities course, we created Travelling Tomes in Spring 2024, and we are
-            excited to welcome you to our project!</p>
-<div class="team">
-    <div class="team-member">
-        <!-- <img src="antara.jpg" alt="Antara"> -->
-        <h4>Antara </h4>
-        <p><strong>Favourite Book: </strong></p>
-        <p><strong>smtg else? </strong></p>
-    </div>
-    <div class="team-member">
-        <!-- <img src="area.jpg" alt="Area"> -->
-        <h4>Area </h4>
-        <p><strong>Favourite Book: </strong></p>
-        <p><strong>smtg else? </strong></p>
-    </div>
-    <div class="team-member">
-        <!-- <img src="eni.jpg" alt="Eni"> -->
-        <h4>Eni </h4>
-        <p><strong>Favourite Book: </strong></p>
-            <p><strong>smtg else? </strong></p>
-    </div>
-    <div class="team-member">
-       <!-- <img src="iz.jpg" alt="Iz"> -->
-        <h4>Iz </h4>
-        <p><strong>Favourite Book: </strong></p>
-        <p><strong>smtg else? </strong></p>
-    </div>
-    <div class="team-member">
-       <!-- <img src="sara.jpg" alt="Sara"> -->
-        <h4>Sara </h4>
-        <p><strong>Favourite Book: </strong></p>
-        <p><strong>smtg else? </strong></p>
-    </div>
-</div>
-</div>
-</article>
-</html>
+        <p>United by our love of books and the Digital Humanities course, we created Travelling Tomes in Spring
+            2024, and we are excited to welcome you to our project!</p>
 
-<div class="row footer">
-    <div class="col-xs-12 col-md-8">Designed and built by Group 1 using
-        <span>CSS</span> and <span>Bootstrap!</span></div>
+        <div id="teamCarousel" class="carousel slide team-members-container" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="team-member">
+                        <img src="images/Antara.png" alt="Picture of Antara">
+                        <div class="member-info">
+                            <h4>Antara</h4>
+                            <p><strong>Favourite Book: </strong></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="team-member">
+                        <img src="images/area.png" alt="Picture of Area">
+                        <div class="member-info">
+                            <h4>Area</h4>
+                            <p><strong>Favourite Book: </strong></p>
+                            <p><strong> Angela Pelster - Limber</strong></p>
+                            <a href="https://www.goodreads.com/book/show/18406174-limber"><img src="images/limber.jpg" alt="Limber by Angela Pelster"</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="team-member">
+                        <img src="images/eniko.png" alt="Picture of Eni">
+                        <div class="member-info">
+                            <h4>Eni</h4>
+                            <p><strong>Favourite Book:</strong></p>
+                            <p><strong> Magda Szabó - The Door</strong></p>
+                            <a href="https://www.goodreads.com/book/show/497499.The_Door?from_choice=false&from_home_module=false"><img src="images/thedoor.jpg" alt="The Door by Magda Szabó"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="team-member">
+                        <img src="images/iz.png" alt="Picture of Iz">
+                        <div class="member-info">
+                            <h4>Iz</h4>
+                            <p><strong>Favourite Book: </strong></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="team-member">
+                        <img src="images/sara.png" alt="Picture of Sara">
+                        <div class="member-info">
+                            <h4>Sara</h4>
+                            <p><strong>Favourite Book: </strong></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </article>
 </div>
+<div class="row contacts">
+    <div class="col-xs-12 col-md-4">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or feedback, feel free to get in touch with us:</p>
+        <ul>
+            <li>Email: info@travellingtomes.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+        <h3>Follow Us</h3>
+        <p>Stay updated with our latest news and announcements by following us on social media:</p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li style="display: inline-block; vertical-align: middle;">
+                <a href="https://www.facebook.com">
+                    <img src="images/img_3.png" alt="Facebook" style="width: 20px; height: 20px; vertical-align: middle;">
+                    Facebook
+                </a>
+            </li>
+            <li style="display: inline-block; vertical-align: middle;">
+                <a href="https://www.x.com">
+                    <img src="images/img_2.png" alt="X" style="width: 20px; height: 20px; vertical-align: middle;">
+                    X
+                </a>
+            </li>
+            <li style="display: inline-block; vertical-align: middle;">
+                <a href="https://www.instagram.com">
+                    <img src="images/img_1.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;">
+                    Instagram
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-xs-12 col-md-4">
+        <h3>Visit Us</h3>
+        <p>If you prefer a face-to-face interaction, come visit our office:</p>
+        <p>14, Av. de la Couronne 12<br>Ixelles, Belgium, 1050</p>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -98,3 +188,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+<div class="row footer">
+    <div class="col-xs-12 col-md-8">Designed and built by Group 1 using
+        <span>CSS</span>, <span>Bootstrap</span>, and more!</div>
+</div>
+</body>
+</html>

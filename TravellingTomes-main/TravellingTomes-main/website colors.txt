@@ -1,6 +1,0 @@
-black: #221f4c
-brown: #be7250
-yellow: #c79645
-pink: #e89d9f
-pale pink: #edded0
-white: #f6f3e4
