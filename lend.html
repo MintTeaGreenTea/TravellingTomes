@@ -44,7 +44,9 @@
         </fieldset>
         <fieldset>
             <legend><b>About your book</b></legend>
-
+            <legend>What book are you lending?</legend>
+            <input type="text" id="searchQuery" placeholder="Enter book title...">
+            <div id="searchResultsDropdown"></div>
             <legend class="book-treatment">Your rules (check what you would be fine with the lender doing)</legend>
             <label for="annotating"><input id="annotating" value="annotating_yes" type="checkbox"/>Annotating the margins</label>
             <label for="dog-earing"><input id="dog-earing" value="dog-earing_yes" type="checkbox"/>Dog-earing pages</label>
@@ -75,56 +77,6 @@
 </div>
 
 
-<script>
-    document.getElementById('survey-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        var formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            city: document.getElementById('city').value,
-            bookTreatment: getCheckedValues('book-treatment'),
-            weeks: document.getElementById('dropdown').value,
-            aboutYou: document.getElementById('about-you').value
-        };
-
-        var jsonData = JSON.stringify(formData, null, 2);
-
-        fetch('https://data.mongodb-api.com/app/data-qoyejvn/endpoint/data/v1/action/insertOne', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'apiKey': '0SVdHV85iv751g9qVVhk65N8OaZlQob0XVsHwbiyZQuSTDElCThpqC9NTcwjJQM9'
-            },
-            body: JSON.stringify({
-                dataSource: 'BookData',
-                database: 'lend_data',
-                collection: 'user_responses',
-                document: JSON.parse(jsonData)
-            })
-
-        })
-
-            .then(response => response.json())
-            .then(data => {
-                console.log('Document inserted with ID:', data.insertedId);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    });
-    // Helper function to get checked values of checkboxes
-    function getCheckedValues(name) {
-        var checkboxes = document.getElementsByName(name);
-        var values = [];
-        for (var i = 0; i < checkboxes.length; i++) {
-            if (checkboxes[i].checked) {
-                values.push(checkboxes[i].value);
-            }
-        }
-        return values;
-    }
-</script>
 
 <div class="row contacts">
     <div class="col-xs-12 col-md-4">
@@ -165,9 +117,12 @@
         <p>If you prefer a face-to-face interaction, come visit our office:</p>
         <p>14, Av. de la Couronne 12<br>Ixelles, Belgium, 1050</p>
     </div>
-</div>
 
-</div>
+    <div class="row footer">
+        <div class="col-xs-12 col-md-8">Designed and built by Group 1 using
+            <span>CSS</span>, <span>Bootstrap</span>, and more!</div>
+    </div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -177,9 +132,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-<div class="row footer">
-    <div class="col-xs-12 col-md-8">Designed and built by Group 1 using
-        <span>CSS</span>, <span>Bootstrap</span>, and more!</div>
-</div>
+<script src="googleBooks.js"></script>
+
 </body>
 </html>
