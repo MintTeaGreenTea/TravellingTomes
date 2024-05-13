@@ -79,7 +79,7 @@ Good Material,Dolly Alderton,Unavailable,2024-05-12
 The Bell Jar,Sylvia Plath,Available,
 Orlando,Virginia Woolf,Unavailable,2024-05-07
 Normal People,Sally Rooney,Available,
-Emma,Jane Austen,Unavailable,
+Emma,Jane Austen,Available,
 Mrs. Dalloway,Virginia Woolf,Unavailable,2024-05-20
 Conversations with Friends,Sally Rooney,Unavailable,
 Sense and Sensibility,Jane Austen,Available,
