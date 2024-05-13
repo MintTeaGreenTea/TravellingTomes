@@ -45,16 +45,29 @@ button {
     top: 50%;
     transform: translateY(-50%);
     width: 5%;
+    background-color: #d55d91;
+
 }
 
 .carousel-control-prev {
-    left: auto;
+    left: 10px;
     right: auto;
 }
 
 .carousel-control-next {
-    right: 0;
+    right: 10px;
     left: auto;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: transparent;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover:hover + .carousel-control-prev,
+.carousel-control-next:hover:hover + .carousel-control-next {
+    background-color: #d55d91;
 }
 
 .contacts {
@@ -227,7 +240,7 @@ label {
 @media only screen and (min-width: 768px) {
     .carousel-control-prev:hover,
     .carousel-control-next:hover {
-        background-color: IndianRed;
+        background-color: #d55d91;
         height: 100%;
         width: 100px;
     }
@@ -245,7 +258,9 @@ label {
     }
 
     #explore {
-        width: 66%;
+        text-align: center;
+        margin-top: 20px;
+        color: #221f4c;
     }
 
     #main {
@@ -264,6 +279,49 @@ label {
         background-image: url('images/flying_book.png');
         background-position: right top;
         background-repeat: repeat-y;
+    }
+
+    #explore_img_r {
+        position: relative;
+        background-image: url('images/flying_book.png');
+        background-size: auto 40%;
+        background-position: right top;
+        background-repeat: repeat-y;
+
+    }
+    #explore_img_l {
+        position: relative;
+        background-image: url('images/flying_book.png');
+        background-size: auto 40%;
+        background-position: left top;
+        background-repeat: repeat-y;
+
+    }
+
+    .place p {
+        display: none;
+    }
+
+    /* Style for <h2> elements */
+    .place h2 {
+        cursor: pointer;
+        color: #b65368;
+
+    }
+
+    .category h1 img {
+        width: 50px; /* Adjust the size as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 5px; /* Add some spacing between the icon and text */
+    }
+    .category h2 img {
+        width: 35px; /* Adjust the size as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 5px; /* Add some spacing between the icon and text */
+    }
+
+    .category {
+        color: #221f4c;
     }
 
     .member-info {
@@ -359,7 +417,28 @@ textarea {
 }
 
 .divider-container img {
-    width: 25%; /* Adjust the width as needed */
-    height: auto; /* To maintain aspect ratio */
+    width: 25%;
+    height: auto;
 }
 
+.playmember-info {
+    padding: 20px;
+}
+
+.playmember-info h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.playmember-info p {
+    font-size: 1.2em;
+}
+
+.playmember-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.playteam-member .col-md-6 {
+    padding: 0 10px;
+}

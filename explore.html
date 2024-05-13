@@ -10,6 +10,7 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Travelling Tomes</title>
+
 </head>
 <body>
 <div class="main_logo">
@@ -31,60 +32,183 @@
     </div>
     <div class="nav col-xs-6 col-md-3"><a href="about_team.html">About the Team</a></div>
 </div>
+<div id="explore">
+    <h3> Explore our curated selection of venues around Leuven to meet and share your books!</h3>
+    <p>Click on the locations for additional information or access our map below.</p>
+</div>
+<div id="explore_img_r">
+    <div id="explore_img_l">
+    <div class="left-column"></div>
+    <div class="right-column"></div>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="category">
+                <h1>Cafés<img src="images/cafe-icon.png" alt="Café Icon"></h1>
+                <div class="place">
+                    <h2 onclick="toggleVisibility('swartehond')"> Swartehond
+                    <a href="https://g.co/kgs/QXpXHdH" target="_blank">
+                        <img src="images/cafe-icon.png" alt="Google Maps">
+                    </a>
+                    </h2>
+                    <p id="swartehond">Swartehond offers a riverside escape from the city, serving brunch, pastries, and an extensive drinks menu with many vegan options available. With plenty of seats on the Joris Helleputteplein, Swartehond is the perfect spot for a sunny day.
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Sat: 10:00-17:00
+                        <br>Sun: 12:00-17:00 </p>
 
-<div id="main_img">
-    <div id="explore">
-    <p>
-    <h1> Here is our selected list of places around Leuven to meet and share your books!</h1>
-    <h2> Swartehond </h2>
- Besides coffee or a desert, you can also choose from a selection of other hot and cold drinks or get a bagel. It’s in a quiet location, placed on a little square with a view of the church. Perfect for warm and rainless days.
+
+                    <h2 onclick="toggleVisibility('sporenursery')">Spore Nursery
+                    <a href="https://www.google.be/search?kgmid=/g/11f4lb8k8q&hl=en-BE&q=Spore+Nursery&kgs=5430dd999c5bc04f&shndl=30&shem=lcbsfb&source=sh/x/loc/osrp/m5/1" target="_blank">
+                        <img src="images/cafe-icon.png" alt="Google Maps">
+                    </a>
+                    </h2>
+                    <p id="sporenursery">A hidden gem near Monseigneur Ladeuzeplein, Spore Nursery is sure to impress you once you enter. This inconspicuous establishment sells plants and gifts as well as serving coffee, so there is limited seating in this green oasis.
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Sat: 10:00-18:00 </p>
+
+                    <h2 onclick="toggleVisibility('noir')">Noir Coffeebar
+                        <a href="https://g.co/kgs/yVzEsW6" target="_blank">
+                            <img src="images/cafe-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="noir">One of the most popular cafés in Leuven due to their high quality coffee, Noir's interior is expansive to accommodate groups of all sizes. A great place to meet, work and read!
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Fri: 08:30-17:30
+                    <br>Sat: 09:30-17:30
+                    <br>Sun: 11:00-17:00</p>
+
+                    <h2 onclick="toggleVisibility('poes')">Poescafé
+                        <a href="https://g.co/kgs/9KadG27" target="_blank">
+                            <img src="images/cafe-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="poes">Although the Poescafé uses an automatic coffee machine, their great selection of cakes (including vegan ones!) and the presence of cats more than makes up for it!
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Sun: 10:00-18:00
+                    </p>
+
+                    <h2 onclick="toggleVisibility('mok')">MOK Coffee Roastery & Bar
+                        <a href="https://g.co/kgs/kQyDD4k" target="_blank">
+                            <img src="images/cafe-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="mok">Using coffee from their own roastery, MOK serves coffee, pastries and toasties in a contemporary and open setting.
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Fri: 09:00-18:00
+                        <br>Sat: 10:00-18:00
+                    </p>
+
+                    <h2 onclick="toggleVisibility('staal')">Koffie en Staal
+                        <a href="https://g.co/kgs/J3QjJdA" target="_blank">
+                            <img src="images/cafe-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="staal">A bustling café with delicious coffee, pastries and light meals, Koffie en Staal is a perfect meeting spot or a place to take a break.
+                        <br><strong>Opening Hours</strong>
+                        <br>Tues-Sat: 09:00-17:00
+                    </p>
+
+                    <h2 onclick="toggleVisibility('onan')">Onan
+                        <a href="https://g.co/kgs/u3WXPNv" target="_blank">
+                            <img src="images/cafe-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="onan">Alongside a large selection of drinks and pastries, you can buy bags tea and coffee from Onan's roastery. As a busy café, Onan is better suited for social gatherings rather than extended study periods.
+                        <br><strong>Opening Hours</strong>
+                        <br>Tues-Sat: 08:00-17:30
+                    </p>
+
+                    <h2 onclick="toggleVisibility('kup')">KUp Corner
+                        <a href="https://www.kuleuven.be/museum-hall" target="_blank">
+                            <img src="images/cafe-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="kup">If you are a KU Leuven student, you have probably noticed that there is a little coffee corner inside of Universiteitshal on Naamsestraat. KUp Corner is also operated by Onan but since it is a part of the university hall, it has much calmer and quieter atmosphere. You can come here to study or work, on your own or with your friends, and easily spend the whole day.
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Fri: 08:00-18:00
+                    </p>
+
+                    <h2 onclick="toggleVisibility('nina')">Nina Specialty Bar & Shop
+                        <a href="https://g.co/kgs/Y9oxYrK" target="_blank">
+                            <img src="images/cafe-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="nina">Boasting a large selection of coffee drinks in a funky interior, the small tables provides the perfect spot for meeting your friends or reading a book. Nina is also home to a small shop where you can buy coffee, tea, and kitchen appliances to prepare your own drinks.
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Fri: 08:30-17:30
+                        <br>Sat: 09:30-18:00
+                    </p>
+</div>
+                </div>
+            </div>
+
+        <div class="col-md-6">
+            <div class="category">
+                <h1>Bookshops<img src="images/bookstore-icon.png" alt="Bookshop Icon"></h1>
+                <div class="place">
+
+                    <h2 onclick="toggleVisibility('sb')">Standaard Boekhandel
+                        <a href="https://g.co/kgs/v4adssu" target="_blank">
+                            <img src="images/bookstore-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="sb">One of the main bookshop chains in Belgium with two shops in Leuven. The larger one, in Rector de Somerplein, has a broad selection of the books in various languages, including a large English section. Standaard Boekhandel can provide you with titles not available in store in a short time.
+                        The second store is located in Diestsestraat and does not have as extensive language options. Alongside books, Standaard Boekhandel sells merchandise and gifts like Jane Austen tarot cards!
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Sat: 09:30-18:00
+                    </p>
+
+                    <h2 onclick="toggleVisibility('oxfam')">Oxfam Bookshop
+                        <a href="https://g.co/kgs/3kj4UER" target="_blank">
+                            <img src="images/bookstore-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="oxfam">Just behind the Oude Markt, Oxfam offers a large selection of second-hand books in a variety of languages, as well as a collection of sheet music books. As a second-hand shop, there are many more Dutch books than other languages.
+                        <br><strong>Opening Hours</strong>
+                        <br>Mon-Sat: 10:00-18:00
+                    </p>
 
 
-    <h2>Spore Nursery</h2>
-    A hidden gem close to Monseigneur Ladeuzeplein, this inconspicuous establishment is sure to impress you once you enter. There are not many tables to sit at, but if you’re lucky, you’ll get one and can spend some time in this green oasis. The menu is not long but coffee tastes great. Ideal for meeting with someone for a little chat. P. S.: You probably won’t come across many places that would be more photogenic!
+                    <h2 onclick="toggleVisibility('plato')">Plato
+                        <a href="https://www.leuvenleest.be/partners/plato" target="_blank">
+                            <img src="images/bookstore-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="plato">Next to Ladeuzeplein, you can find Plato. With discounted books, a broad selection of academic texts, and movies, Plato is a friendly, local shop to depend upon!
+                        <br><strong>Opening Hours</strong>
+                        <br>Tues-Sat: 11:00-18:00
+                    </p>
 
+                    <h2 onclick="toggleVisibility('acco')">Acco
+                        <a href="https://g.co/kgs/hBnhCBt" target="_blank">
+                            <img src="images/bookstore-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="acco">For students in Leuven, Acco is the hotspot for books, stationery and other study materials.
+                        <br><strong>Opening Hours</strong>
+                        <br>Tues-Sat: 10:00-18:00
+                    </p>
 
-    <h2>Noir</h2>
-    It’s probably the most popular coffee shop in Leuven, famous among both locals and foreigners. Dark drinks but also dark interior, large place that usually doesn’t get too loud. It seems to be a great fit for anything – meeting people, studying or working, reading on the couch by the large window in the back corner. This place offers a large selection of coffee, tea and cold drinks. (and they all taste great!).
+                    <h2 onclick="toggleVisibility('fnac')">Fnac
+                        <a href="https://www.nl.fnac.be/Leuven/Fnac-Leuven/cl542" target="_blank">
+                            <img src="images/bookstore-icon.png" alt="Google Maps">
+                        </a>
+                    </h2>
+                    <p id="fnac">  Alongside its selection of technical products, Fnac holds many books, from the recently published to classics, available in different languages.
+                        <br><strong>Opening Hours</strong>
+                        <br>Sun-Thurs: 10:00-18:30
+                        <br>Fri: 10:00-19:00
+                    </p>
 
-    <h2> Poescafé</h2>
-    This place has a great selection of cakes (vegan ones too) and they taste delicious. The coffee is not greta, being made with an automatic coffee machine, but the presence of cats makes it all worth it!
-
-
-    <h2>MOK Specialty Coffee Roastery & Bar</h2>
- It’s a stylish and modern coffeeshop. It’s one of those places where you can just chill the whole afternoon. Careful : the coffee was strong and bitter, which could not be for everyone's taste. In addition to getting great coffee, you can also pick from selection of teas and few cold, buy a bag of coffee beans from MOK’s roastery or get some pastry to have with your drink.
-The layout of the coffeeshop is fun and unconventional. It appears that there are just several places at the high table by the window in the front from the outside but once you enter, you realise that the bar does not divide the space into customer- and staff-dedicated areas but is open and part of one integrated area.
-    <h2>Koffie en Staal</h2>
-Busy, busy, busy. This place is always full of people, everybody engaged in conversations with their friends, partners and families, the staff in the back of the room quickly moving around the bar and coffee machine.  The taste of the coffee? Amazing! In addition to having a desert here, you can also get breakfast or lunch. This is a perfect spot for meeting with other people or making a little coffee or lunch break with yourself during a busy day!
-
-    <h2>Onan</h2>
-Onan is also a roastery and distributor, so after having your coffee or tea, you can also get a bag of either from their own brand. An the bar, you can order something from large selection of hot and cold coffee drinks or something else (you know the drill, it’s a coffee shop, so there are some hot chocolates, lemonades, or even sparkling water, if you’re feeling adventurous). For espresso-based drinks, you can pick from two kinds of beans, one always being stronger and richer in taste. Because this place can be very loud, with people coming and leaving constantly and the bar not being too separated from the sitting area, resulting in a lot of noise, it is not exactly ideal for studying or working.
-
-    <h2>KUp Corner</h2>
-If you are a KU Leuven student, you have probably noticed that there is a little coffee corner inside of Universiteitshal on Naamsestraat. KUp Corner is also operated by Onan but since it is a part of the university hall, it has much calmer and quieter atmosphere. You can come here to study or work, on your own or with your friends, and easily spend the whole day.
-    <h2>Nina Specialty Bar & Shop</h2>
-There is a large selection of coffee drinks and if you are a fan of strong coffee with intense flavour, you should definitely stop by. The interior is furnished in a funky way that gives a bit of 60s and milkshake bar vibes. The tables are quite small so this place seems ideal for meeting your friends or reading a book.
-On top of having your coffee and a cake, you can also visit the shop that is part of the establishment and get a bag of coffee, tea or dishes and appliances for preparation of these hot drinks.
-
-    <h2>Standaard Boekhandel</h2>
-    One of the main bookstores chain in Belgium, and luckily, Leuven has two different spots! The biggest one, in Rector de Somerplein, has one of the best book selections in the city. Despite having a huge English section, this is my go to place when I want to buy books of other languages, like French! One of the best things about this place? Being a chain can provide you with titles not available in store in a short time! Definitely a go to place if you’re passing by on the way to get a Pinocchio Waffle or waiting for the bus.
-    The other store is located in Diestsestraat. My favourite thing about the place is the bookish merchandise (Jane Austen tarots, I’m coming for you!). The place, however, is quite small, especially when it comes to the multilingual section.
-
-        <h2> Oxfam</h2>
-    Just behind the Oude Markt, Oxfam is a must for the thrifting fans who  love to buy second hand. You will find everything! There’s a language section (mainly French, English and Dutch, but also Italian, German and Spanish), a music section where you can find some sheets if you fancy playing, and many more! The only problem it presents is that, being a second hand shop, there are way more Dutch titles than the English ones!
-
-            <h2>Plato</h2>
-    Plato must be my all time favourite bookstore. A small hidden gem (maybe not so hidden: it’s right next to Ladeuzeplein!) where you can find many books for 25% off. They always have various academic material, plus some other popular titles of the moment, together with several movies and music albums! The owner is a picturesque Belgian guy: a head full of white hair, and he still handwrites the price on each of his books. He doesn’t speak a word of English (or at least never did when speaking to me), but a couple of “goedemiddag” and “dank u” is all that you’ll need!
-
-                <h2> Acco</h2>
-    If you are a student in Leuven, it’s impossible that you have never heard about Acco: it is THE hotspot for books and stationery you’ll need in class. Going there on an unfortunate day might mean you’ll need to wait to get in - and no, that is not a joke. However, being so well furnished with school books, it may lack in other sections.
-
-                    <h2>Fnac</h2>
-  Fnac has the best English section so far. It has many books, from the most recently published ones to the classics, available in different languages. An obstacle you’ll perhaps face is that, this is not a proper bookstore but rather a multi floor shop, where you can find items not at all book-related. Quite practical I would say, but definitely not matching the it-girl aesthetic!
-
-    </p>
+                     </div>
+            </div>
+        </div>
     </div>
 </div>
+    </div>
+
+
+    </div>
 </div>
 <div id="map"></div>
 <div class="row contacts">
@@ -181,17 +305,46 @@ On top of having your coffee and a cake, you can also visit the shop that is par
     cafeMarker.bindPopup("Koffie en Staal");
     var cafeMarker = L.marker([50.883451311423805, 4.708177025965231], { icon: cafeIcon }).addTo(map);
     cafeMarker.bindPopup("Nina Specialty Bar & Shop");
+    var cafeMarker = L.marker([50.87432872929122, 4.699979768202502], { icon: cafeIcon }).addTo(map);
+    cafeMarker.bindPopup("KUp Corner");
+
 
 
     var bookstoreMarker = L.marker([50.88093584664075, 4.701150333809971], { icon: bookstoreIcon }).addTo(map);
     bookstoreMarker.bindPopup("BARBÓÉK")
+    var cafeMarker = L.marker([50.87980327820271, 4.702833297038681], { icon: bookstoreIcon }).addTo(map);
+    cafeMarker.bindPopup("Standaard Boekhandel");
+    var bookstoreMarker = L.marker([50.87783755474409, 4.698373197088387], { icon: bookstoreIcon }).addTo(map);
+    bookstoreMarker.bindPopup("Oxfam")
+    var bookstoreMarker = L.marker([50.87760013540417, 4.706291034115053], { icon: bookstoreIcon }).addTo(map);
+    bookstoreMarker.bindPopup("Plato")
+    var bookstoreMarker = L.marker([50.87644560069534, 4.7085941006222605], { icon: bookstoreIcon }).addTo(map);
+    bookstoreMarker.bindPopup("Acco")
+    var bookstoreMarker = L.marker([50.88022260047356, 4.705815902464575], { icon: bookstoreIcon }).addTo(map);
+    bookstoreMarker.bindPopup("Fnac")
+
     ;
 </script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script>
+    // Function to toggle visibility of <p> elements based on <h2> clicks
+    function toggleVisibility(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
