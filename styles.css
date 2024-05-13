@@ -353,3 +353,13 @@ textarea {
     min-height: 2em;
 }
 
+.divider-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider-container img {
+    width: 25%; /* Adjust the width as needed */
+    height: auto; /* To maintain aspect ratio */
+}
+
