@@ -73,7 +73,7 @@ function displayBooks(books) {
 
 // Call the readCSVFromData function with the CSV data string
 const csvData = `Title,Author,Availability,ExchangeDate
-Pride and Prejudice,Jane Austen,Unavailable,2024-05-03
+Pride and Prejudice,Jane Austen,Unavailable,2024-05-09
 Crudo,Olivia Laing,Available,
 Good Material,Dolly Alderton,Unavailable,2024-05-12
 The Bell Jar,Sylvia Plath,Available,
