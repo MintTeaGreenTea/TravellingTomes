@@ -22,7 +22,8 @@ body {
 
 }
 
-.btn-default, .dropdown-toggle {
+/* Consolidate button styles under a single class */
+.btn {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
@@ -31,44 +32,39 @@ body {
     cursor: pointer;
 }
 
+/* Apply button styles to both .btn-default and .dropdown-toggle */
+.btn-default,
+.dropdown-toggle {
+    @extend .btn;
+}
+
+/* Adjust specificity for .dropdown-toggle:hover */
+.dropdown-toggle:hover {
+    color: IndianRed;
+    text-decoration: underline;
+}
+
+/* Apply button styles to button elements as well */
 button {
+    @extend .btn;
     width: 100%;
     margin: 1em auto;
     height: 2em;
-    font-size: 1.1rem;
     background-color: #3b3b9f;
-    border:0;
+    border: 0;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5%;
-    background-color: #d55d91;
-
-}
-
-.carousel-control-prev {
-    left: 10px;
-    right: auto;
-}
-
-.carousel-control-next {
-    right: 10px;
-    left: auto;
-}
-
+/* Adjust specificity for .carousel-control-prev:hover and .carousel-control-next:hover */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: transparent;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover:hover + .carousel-control-prev,
-.carousel-control-next:hover:hover + .carousel-control-next {
+.carousel-control-prev:hover + .carousel-control-prev,
+.carousel-control-next:hover + .carousel-control-next {
     background-color: #d55d91;
 }
+
 
 .contacts {
     background-color: #d55d91;
@@ -248,7 +244,10 @@ label {
     .carousel-control-prev,
     .carousel-control-next {
         color: black;
+        margin-right: -150px;
+        margin-left: -150px;
     }
+
     .carousel-item {
         display: flex;
         justify-content: center;
@@ -256,6 +255,8 @@ label {
         text-align: center;
         margin-bottom: 2em;
     }
+}
+
 
     #explore {
         text-align: center;
@@ -421,24 +422,27 @@ textarea {
     height: auto;
 }
 
-.playmember-info {
+.member-info {
     padding: 20px;
 }
 
-.playmember-info h4 {
+.member-info h4 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.playmember-info p {
+.member-info p {
     font-size: 1.2em;
 }
 
-.playmember-info img {
+.member-info img {
     max-width: 100%;
     height: auto;
 }
 
-.playteam-member .col-md-6 {
+.team-member .col-md-6 {
     padding: 0 10px;
 }
+
+
+
