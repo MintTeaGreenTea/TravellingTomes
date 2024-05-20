@@ -15,3 +15,6 @@ Although users from all backgrounds and ages are welcomed in Travelling Tomes, t
 
 ## Design
 The website tries to follow a color scheme corresponding to a "light academia" esthetic and similar to those used in Goodreads. Soft, pastel-ish colors were favored throughout the website. In spite of the simplicity of the general design, the team also emphasized a visually pleasant experience with beautiful graphics throughout. Additionally, due to the emphasis on sustainability, a nature theme also appears on the website, further highlighting the impact this initiative could have in reducing paper consumption. All graphics were designed using Canva.
+
+## Other Software
+To link to MongoDB, the team made use of Node.js, express, and mongoose. To test the database, a local environment launched through node server.js was instrumental.

@@ -4,10 +4,10 @@ const bookLendingSchema = new mongoose.Schema({
     name: { type: String },
     email: { type: String },
     city: { type: String },
-    bookTitle: { type: String },
+    bookURL: { type: String },
     rules: [String],
     weeks: { type: String },
-    additionalInfo: { type: String }
+    aboutYou: { type: String }
 });
 
 module.exports = mongoose.model('BookLending', bookLendingSchema);

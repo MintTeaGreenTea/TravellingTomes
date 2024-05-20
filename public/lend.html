@@ -45,7 +45,7 @@
         <fieldset>
             <legend><b>About your book</b></legend>
             <legend>What book are you lending?</legend>
-            <input type="text" id="searchQuery" name="searchQuery" placeholder="Enter book title...">
+            <input type="text" id="searchQuery" name="bookTitle" placeholder="Enter book title...">
             <div id="searchResultsDropdown"></div>
             <legend class="book-treatment">Your rules (check what you would be fine with the borrower doing)</legend>
             <label for="annotating"><input id="annotating" name="annotating" value="annotating_yes" type="checkbox"/>Annotating the margins</label>
@@ -56,7 +56,7 @@
         </fieldset>
         <fieldset>
             <legend><b>Tell us more!</b></legend>
-            <label>For how long would you like to exchange books?
+            <label for="weeks">For how long would you like to exchange books?
                 <select id="dropdown" name="weeks">
                     <option value="0">(select one)</option>
                     <option value="1">1 week</option>
@@ -79,28 +79,10 @@
 
 <script>
     document.getElementById('survey-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        async function handleSubmit() {
-            const formData = new FormData(event.target);
-            try {
-                const response = await fetch('/submit', {
-                    method: 'POST',
-                    body: formData
-                });
-                if (response.ok) {
-                    document.getElementById('submittedMessage').style.display = 'block';
-                } else {
-                    console.error('Form submission failed');
-                }
-            } catch (error) {
-                console.error('Error submitting form:', error);
-            }
-        }
-
-        handleSubmit();
+        document.getElementById('submittedMessage').style.display = 'block';
+        document.querySelector('button[type="submit"]').disabled = true;
     });
 </script>
-
 
 <div class="row contacts">
     <div class="col-xs-12 col-md-4">

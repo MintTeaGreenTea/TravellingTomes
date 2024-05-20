@@ -19,11 +19,11 @@ mongoose.connect('mongodb+srv://area_tomes:YlnFaKRIIWYwSpjy@bookdata.8dahtck.mon
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public')); // Serve static files
+app.use(express.static('public'));
 
 app.post('/submit', async (req, res) => {
     console.log('Form Data:', req.body);
-    const { name, email, city, searchQuery, weeks, aboutYou } = req.body;
+    const { name, email, city, bookURL, weeks, aboutYou } = req.body;
     const rules = [
         req.body.annotating ? 'annotating' : '',
         req.body.dogEaring ? 'dog-earing' : '',
@@ -36,10 +36,10 @@ app.post('/submit', async (req, res) => {
         name,
         email,
         city,
-        bookTitle: searchQuery,
+        bookURL,
         rules,
         weeks,
-        additionalInfo: aboutYou
+        aboutYou
     });
 
     try {
