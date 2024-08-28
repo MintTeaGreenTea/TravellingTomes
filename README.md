@@ -2,7 +2,7 @@
 Travelling Tomes is the projected ideated and developed by Group 1 (Antara Ballal, Area Guede Ramos, Eniko Takacs, Isabel Davis, and Sara Zanetti) of the Spring 2024 Web Information Systems course. Here you can find all the HTML, CSS, and JavaScript written to bring this project to fruition.
 
 ## What is Travelling Tomes?
-Travelling Tomes is a book-sharing experience; through this simple social media, users can easily upload the books they wish to lend or ask for the posted books to borrow. Through this project, the creators hope to not just connect like-minded readers and build a strong reading community, but also reduce the environmental impact of the book industry by encouraging sharing books over buying them. Additionally, with the 
+Travelling Tomes is a book-sharing experience; through this simple social media, users can easily upload the books they wish to lend or ask for the posted books to borrow. Through this project, the creators hope to not just connect like-minded readers and build a strong reading community, but also reduce the environmental impact of the book industry by encouraging sharing books over buying them.  
 
 ## Basic Structure
 The user can easily find their way through the website with the navigation bar on top. They can learn more about the project, find spots to exchange their books (only in Leuven for now, but further development of this project would require involving coffeeshops, bookshops, and other such venues from other places in the world), submit their books for lending or explore the books available, or read more about the team. 
